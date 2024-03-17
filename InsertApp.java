@@ -19,7 +19,8 @@ public class InsertApp {
 		    int rollno =scanner.nextInt();
 		    System.out.println("Enter the name of studant");
 		    String name = scanner.next();
-			String nonselectQuery = "insert into student (rollno,name)values("+rollno+",'"+name+"')";
+		    name = "'"+name+"'";
+			String nonselectQuery = "insert into student (rollno,name)values("+rollno+","+name+")";
 			int rowAffected = statement.executeUpdate(nonselectQuery);
 			  System.out.println("Rows Affected are ::"+rowAffected);
 		} catch (SQLException | IOException e) {
