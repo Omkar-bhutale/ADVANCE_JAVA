@@ -32,8 +32,8 @@ public class ClobRetrivalApp {
 				if (scanner != null) {
 					System.out.println("enter the id of studant");
 					id = scanner.nextInt();
-					pstmt.setInt(id, id);;
-					resultSet =	pstmt.executeQuery();
+					pstmt.setInt(1, id);
+					resultSet = pstmt.executeQuery();
 				}
 				
 			if(resultSet.next()) {
