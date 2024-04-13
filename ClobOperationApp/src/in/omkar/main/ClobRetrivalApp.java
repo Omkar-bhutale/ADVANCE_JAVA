@@ -48,6 +48,7 @@ public class ClobRetrivalApp {
 			    	c = reder.read();
 			    }
 			    writer.close();
+				//IOUtils.copy(reader,writer);
 			    System.out.println(file.getAbsolutePath());
 			}
 			
